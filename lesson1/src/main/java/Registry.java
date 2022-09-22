@@ -15,7 +15,7 @@ public class Registry {
         return patient;
     }
 
-    @Autowired
+    @Autowired(required = false)
     @Qualifier("patient")
     public void setPatient(IPatient patient) {
         this.patient = patient;
